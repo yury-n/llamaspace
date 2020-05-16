@@ -1,0 +1,95 @@
+:root {
+  --primary-color: #7c3cfc;
+  --secondary-color: #f6f6f6;
+  --border-radius: 8px;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+::selection {
+  background: #e2dbff; /* WebK#bdadffit/Blink Browsers */
+}
+::-moz-selection {
+  background: #e2dbff; /* Gecko Browsers */
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.inline-label {
+  margin: auto;
+  margin-top: 30px;
+  font-size: 15px;
+  color: #747474;
+}
+
+.input {
+  border: none;
+  padding: 12px 18px;
+  font-size: 16px;
+  border-radius: var(--border-radius);
+  background: #f3f3f4;
+  border: 1px solid #f3f3f4;
+  outline: none;
+}
+
+.input:hover {
+  transition: all 250ms;
+  box-shadow: 0 0 0px 5px #e7e1ff99;
+  border-color: #d0d0d0;
+  background: white;
+}
+
+.input:active {
+  position: relative;
+  top: 1px;
+  transform: scale(1);
+}
+
+.input:focus {
+  border-color: hsla(249, 91%, 79%, 1);
+  background: white;
+  box-shadow: 0 0 0px 5px #e7e1ff99;
+}
+
+.button {
+  width: auto;
+  padding: 10px 20px;
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 200ms;
+}
+
+.button:hover {
+  transform: scale(1.025);
+}
+
+.button:active {
+  position: relative;
+  top: 2px;
+  box-shadow: none;
+}
+
+.button-primary {
+  background: var(--primary-color);
+  box-shadow: 0px 3px 6px -1px hsla(260, 97%, 10%, 0.65);
+  color: white;
+}
+
+.button-secondary {
+  background: var(--secondary-color);
+  box-shadow: 0px 3px 6px -1px hsla(0, 0%, 0%, 0.14);
+}
+
+.button {
+  margin: 50px 10px;
+}
