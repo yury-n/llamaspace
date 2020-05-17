@@ -6,17 +6,25 @@
 
   <link rel="stylesheet" media="screen, projection" href="./index.css" />
 </head>
-<div>
+<div
+  style="
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  "
+>
   <div
     style="
       display: flex;
       flex-direction: column;
       justify-content: center;
       width: 300px;
-      margin: auto;
-      margin-top: 100px;
+      margin-top: -140px;
     "
   >
+    <input type="range" class="range-control" />
     <label for="email" class="label">Email</label>
     <input
       class="input"
@@ -25,9 +33,19 @@
       autocomplete="off"
       spellcheck="false"
     />
-    <div style="display: flex; justify-content: center;">
-      <div class="button button-primary">Submit</div>
-      <div class="button button-secondary">Cancel</div>
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+      "
+    >
+      <div class="button button-primary">Sign Up</div>
+      <div style="font-size: 14px; margin: 0 20px;">
+        or
+      </div>
+      <div class="button button-secondary">Log In</div>
     </div>
   </div>
 </div>
