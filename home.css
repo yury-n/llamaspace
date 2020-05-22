@@ -21,8 +21,8 @@
   display: flex;
 }
 
-.sticky-bar-buttons > .button + .button {
-  margin-left: 20px;
+.sticky-bar-buttons > .button-wrapper + .button-wrapper {
+  margin-left: 10px;
 }
 
 .sticky-bar .button {
@@ -32,6 +32,7 @@
 .footer {
   border-top: 1px solid #e0e0e0;
   padding: 20px;
+  font-size: 14px;
   margin-top: 130px;
   display: flex;
   justify-content: space-between;

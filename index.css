@@ -92,7 +92,45 @@ body {
   background-color: var(--primary-color);
 }
 
+button {
+  border: none;
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+}
+
+.button-wrapper,
+.button:focus {
+  outline: none;
+}
+
+button:active {
+  border: none;
+}
+
+.button-wrapper:focus > .button:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: -3px;
+  bottom: -5px;
+  left: -4px;
+  right: -4px;
+  box-shadow: 0 0 0px 3px #d1bcfe;
+  border-radius: 10px;
+}
+
+.button-wrapper:active > .button:after {
+  top: -4px;
+  bottom: -4px;
+}
+
 .button {
+  display: inline-block;
+  position: relative;
   width: auto;
   padding: 10px 20px;
   border-radius: var(--border-radius);
@@ -101,13 +139,20 @@ body {
   cursor: pointer;
   user-select: none;
   transition: transform 200ms;
+  border: 1px #dbdbdb solid;
+  font-size: 0.95rem;
+}
+
+.button.button-white {
+  background: white;
+  border-color: #dbdbdb;
 }
 
 .button:hover {
   transform: scale(1.025);
 }
 
-.button:active {
+.button-wrapper:active .button {
   position: relative;
   top: 2px;
   box-shadow: none;
@@ -116,6 +161,7 @@ body {
 .button-primary {
   background: var(--primary-color);
   box-shadow: 0px 3px 6px -1px hsla(260, 97%, 10%, 0.65);
+  border-color: var(--primary-color);
   color: white;
 }
 
@@ -126,15 +172,17 @@ body {
 
 .button-hollow {
   border: 3px solid var(--primary-color);
-  box-sizing: border-box;
-  padding: 7px 20px;
-  color: var(--primary-color);
-  box-shadow: 0px 3px 6px -1px hsla(260, 97%, 10%, 0.35);
+  box-sizing: content-box;
+  padding: 8px 20px;
+  color: hsl(260, 93%, 35%);
+  box-shadow: 0px 3px 6px -1px hsla(0, 0%, 0%, 0.22);
   background: #f9f9f9;
 }
 
 .button-simple {
   color: var(--primary-color);
+  font-size: 14px;
+  border: none;
 }
 
 /* RANGE */
