@@ -7,6 +7,8 @@
 html,
 body {
   font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 ::selection {
@@ -122,6 +124,19 @@ body {
   box-shadow: 0px 3px 6px -1px hsla(0, 0%, 0%, 0.14);
 }
 
+.button-hollow {
+  border: 3px solid var(--primary-color);
+  box-sizing: border-box;
+  padding: 7px 20px;
+  color: var(--primary-color);
+  box-shadow: 0px 3px 6px -1px hsla(260, 97%, 10%, 0.35);
+  background: #f9f9f9;
+}
+
+.button-simple {
+  color: var(--primary-color);
+}
+
 /* RANGE */
 
 input[type="range"] {
@@ -166,3 +181,9 @@ input[type="range"]::-moz-range-thumb {
 }
 
 /* RANGE end */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
