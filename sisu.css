@@ -2,8 +2,13 @@
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.sisu-page > *:first-child {
+  margin-top: -100px;
 }
 
 .form {
@@ -11,7 +16,11 @@
   flex-direction: column;
   justify-content: center;
   width: 300px;
-  margin-top: -140px;
+}
+
+.form-error {
+  color: #fc3c83;
+  margin-bottom: 35px;
 }
 
 .form-buttons {
@@ -45,4 +54,8 @@
 
 .input:focus + .email-me-button {
   background: white;
+}
+
+.somebody-invites {
+  margin-bottom: 50px;
 }

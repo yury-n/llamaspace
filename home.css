@@ -1,28 +1,16 @@
-.sticky-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  border-bottom: 1px solid #e0e0e0;
-  box-sizing: border-box;
-  padding: 20px;
-  background: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.input-search-wrapper img {
+  width: 16px;
+  position: absolute;
+  left: 15px;
+  top: 14px;
+  opacity: 0.5;
+  pointer-events: none;
   z-index: 1;
 }
 
-.sticky-bar .name {
-  margin-bottom: 0;
-}
-
-.sticky-bar-buttons {
-  display: flex;
-}
-
-.sticky-bar .button {
-  margin: 0;
+.input-search-wrapper .input {
+  width: 100%;
+  padding-left: 40px;
 }
 
 .footer {
@@ -48,11 +36,6 @@
   margin: 80px 0;
 }
 
-.team-name {
-  font-weight: 700;
-  font-size: 22px;
-}
-
 .name {
   position: relative;
   font-weight: 700;
@@ -62,12 +45,11 @@
 
 .human-has-updates {
   position: absolute;
-  left: -25px;
-  top: 20px;
-  width: 8px;
-  height: 8px;
-  border-radius: 100%;
-  background-color: var(--primary-color);
+  left: -40px;
+  top: 12px;
+  width: 7px;
+  height: 24px;
+  border-radius: 0 6px 6px 0;
 }
 
 .posts-stream {
