@@ -229,7 +229,7 @@ button:active {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1;
+  z-index: 10;
 }
 
 .sticky-bar-buttons {
@@ -243,4 +243,34 @@ button:active {
 .sticky-bar .team-name {
   font-weight: 700;
   font-size: 22px;
+}
+
+.modal-overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.modal {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 20px 0px;
+  border-radius: 32px;
+  background: white;
+}
+
+.modal-x {
+  position: absolute;
+  top: -70px;
+  right: -70px;
+  width: 55px;
 }

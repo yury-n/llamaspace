@@ -1,3 +1,7 @@
+.input-search-wrapper {
+  z-index: 0;
+}
+
 .input-search-wrapper img {
   width: 16px;
   position: absolute;
@@ -133,4 +137,25 @@
   font-size: 42px;
   font-weight: 500;
   cursor: pointer;
+}
+
+.post-thumb-description {
+  white-space: nowrap;
+  position: absolute;
+  bottom: 6px;
+  overflow: hidden;
+  width: 100%;
+  text-overflow: ellipsis;
+  padding: 11px 20px 6px 20px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 0 0 12px 12px;
+  font-size: 14px;
+  transition: all ease 300ms;
+  max-height: 120px;
+}
+
+.post-thumb:hover .post-thumb-description {
+  white-space: normal;
+  height: auto;
 }
