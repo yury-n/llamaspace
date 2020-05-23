@@ -184,7 +184,7 @@ button:active {
 .button-hollow {
   border: 3px solid var(--primary-color);
   box-sizing: content-box;
-  padding: 8px 20px;
+  padding: 9px 20px;
   color: hsl(260, 93%, 35%);
   box-shadow: 0px 3px 6px -1px hsla(0, 0%, 0%, 0.22);
   background: #f9f9f9;
@@ -194,6 +194,10 @@ button:active {
   color: var(--primary-color);
   font-size: 14px;
   border: none;
+}
+
+.buttons .button-wrapper + .button-wrapper {
+  margin-left: 10px;
 }
 
 .form-group {

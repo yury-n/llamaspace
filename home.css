@@ -21,10 +21,6 @@
   display: flex;
 }
 
-.sticky-bar-buttons > .button-wrapper + .button-wrapper {
-  margin-left: 10px;
-}
-
 .sticky-bar .button {
   margin: 0;
 }
