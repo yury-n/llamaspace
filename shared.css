@@ -47,7 +47,8 @@ button:active {
   position: relative;
 }
 
-.input {
+.input,
+.textarea {
   border: none;
   padding: 12px 18px;
   font-size: 16px;
@@ -57,29 +58,37 @@ button:active {
   outline: none;
 }
 
-.input:hover {
+.input:hover,
+.textarea:hover {
   transition: all 250ms;
   box-shadow: 0 0 0px 5px #e7e1ff99;
   border-color: #d0d0d0;
   background: white;
 }
 
-.input:active {
+.input:active,
+.textarea:active {
   position: relative;
   top: 1px;
   transform: scale(1);
 }
 
-.input:focus {
+.input:focus,
+.textarea:focus {
   border-color: var(--primary-color);
   background: white;
   box-shadow: 0 0 0px 5px #e7e1ff99;
 }
 
-.input.error {
+.input.error,
+.textarea.error {
   border-color: #fc3c83;
   background: white;
   box-shadow: 0 0 0px 5px #ffe1f499;
+}
+
+.textarea {
+  resize: none;
 }
 
 .toggle-control {
@@ -158,11 +167,11 @@ button:active {
   border-color: #dbdbdb;
 }
 
-.button:hover {
+.button:not(.busy):not(.disabled):hover {
   transform: scale(1.025);
 }
 
-.button-wrapper:active .button {
+.button-wrapper:active .button:not(.busy):not(.disabled) {
   position: relative;
   top: 2px;
   box-shadow: none;
@@ -182,6 +191,35 @@ button:active {
   color: white;
   border: none;
   padding: 12px 24px;
+}
+
+.button-primary.busy {
+  cursor: progress;
+  animation: pulse 2s infinite;
+  opacity: 0.8;
+  box-shadow: 0px 3px 6px -1px hsla(260, 97%, 10%, 0),
+    inset 0px 3px 8px 1px hsla(0, 0%, 100%, 0.35);
+}
+
+.button-primary.disabled {
+  cursor: default;
+  opacity: 0.5;
+  box-shadow: 0px 3px 6px -1px hsla(260, 97%, 10%, 0),
+    inset 0px 3px 8px 1px hsla(0, 0%, 100%, 0.35);
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.4;
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 0.4;
+  }
 }
 
 .button-secondary {
@@ -261,16 +299,41 @@ button:active {
 
 .modal {
   position: relative;
-  width: 400px;
-  height: 400px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 20px 0px;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 6px 20px 0px;
   border-radius: 32px;
   background: white;
 }
 
 .modal-x {
   position: absolute;
-  top: -70px;
-  right: -70px;
+  top: 25px;
+  right: -80px;
   width: 55px;
+  cursor: pointer;
+}
+
+.modal-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+}
+
+.form-error {
+  color: #fc3c83;
+  margin-bottom: 35px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
 }

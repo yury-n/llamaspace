@@ -1,0 +1,56 @@
+<head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" media="screen, projection" href="./shared.css" />
+  <link rel="stylesheet" media="screen, projection" href="./home.css" />
+</head>
+<div>
+  <div class="sticky-bar">
+    <div class="team-name">Teamname</div>
+    <div class="sticky-bar-buttons buttons">
+      <button class="button-wrapper">
+        <span class="button button-secondary button-white" tabindex="-1"
+          >Log out</span
+        >
+      </button>
+      <button class="button-wrapper">
+        <span class="button button-hollow" tabindex="-1" style="width: 60px;"
+          >Invite</span
+        >
+      </button>
+    </div>
+  </div>
+  <div class="modal-overlay">
+    <div class="modal">
+      <img class="modal-x" src="./assets/x.svg" />
+      <div class="post">
+        <div
+          class="post-image busy"
+          style="background-image: url(https://source.unsplash.com/random?6);"
+        ></div>
+        <textarea
+          class="textarea description-textarea"
+          rows="3"
+          placeholder="Description"
+        ></textarea>
+        <div class="form-buttons buttons">
+          <button class="button-wrapper">
+            <span class="button button-secondary" tabindex="-1">Cancel</span>
+          </button>
+          <button class="button-wrapper">
+            <span class="button button-primary disabled" tabindex="-1"
+              >Submit</span
+            >
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div>llamaspace</div>
+    <div class="button button-simple">Contact</div>
+  </div>
+</div>

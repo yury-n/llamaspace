@@ -11,25 +11,6 @@
   margin-top: -100px;
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 300px;
-}
-
-.form-error {
-  color: #fc3c83;
-  margin-bottom: 35px;
-}
-
-.form-buttons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 40px;
-}
-
 .email-me-button {
   position: absolute;
   top: 7px;

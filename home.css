@@ -47,6 +47,32 @@
   margin-bottom: 40px;
 }
 
+.owner-name-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.owner-name-wrapper {
+  margin-bottom: 40px;
+}
+
+.owner-name-wrapper .name {
+  margin-bottom: 0;
+}
+
+.owner-name-wrapper img {
+  opacity: 0;
+  width: 23px;
+  margin-left: 14px;
+  transition: opacity 300ms ease;
+}
+
+.owner-name-wrapper:hover img {
+  opacity: 1;
+}
+
 .human-has-updates {
   position: absolute;
   left: -40px;
@@ -116,12 +142,18 @@
   height: 100%;
   background: #ffffffd6;
   color: black;
-  font-size: 24px;
+  font-size: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: 700;
+  font-weight: 500;
   cursor: pointer;
+}
+
+.post-thumb-more-button span {
+  position: relative;
+  top: 1px;
+  margin-right: 2px;
 }
 
 .post-thumb-add-button {
@@ -137,6 +169,10 @@
   font-size: 42px;
   font-weight: 500;
   cursor: pointer;
+}
+
+.post-thumb-add-button img {
+  width: 40px;
 }
 
 .post-thumb-description {
@@ -158,4 +194,49 @@
 .post-thumb:hover .post-thumb-description {
   white-space: normal;
   height: auto;
+}
+
+.post {
+  width: 600px;
+}
+
+.post-image {
+  width: 600px;
+  height: 600px;
+  border-radius: 16px;
+  background-size: cover;
+}
+
+.post-image-dropzone {
+  width: 600px;
+  height: 600px;
+  border-radius: 16px;
+  border: 2px dashed #afafaf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.post-image-dropzone.active {
+  background: #f1edff;
+}
+
+.post-image-select-file {
+  margin-top: 5px;
+  background: transparent;
+}
+
+.post-image.busy {
+  animation: pulse 2s infinite;
+}
+
+.post-description {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.description-textarea {
+  margin-top: 20px;
+  width: 100%;
 }
