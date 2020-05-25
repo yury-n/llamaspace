@@ -11,16 +11,29 @@
   <div class="modal-overlay">
     <div class="modal">
       <img class="modal-x" src="./assets/x.svg" />
-      <div class="alert">
-        <div class="modal-title">Remove</div>
-        <div>Are you sure you want to remove this post?</div>
+      <div class="new-team form">
+        <div class="modal-title">Create Team</div>
+        <div class="form-group">
+          <label for="email" class="label">Name</label>
+          <input class="input" type="text" autofocus />
+        </div>
+        <div class="form-group">
+          <label for="email" class="label">Logo</label>
+          <div style="display: flex;">
+            <button class="button-wrapper">
+              <span class="button button-secondary button-white" tabindex="-1"
+                >Select Image</span
+              >
+            </button>
+          </div>
+        </div>
         <div class="form-buttons buttons">
           <button class="button-wrapper">
             <span class="button button-secondary" tabindex="-1">Cancel</span>
           </button>
           <button class="button-wrapper">
-            <span class="button button-primary danger" tabindex="-1"
-              >Remove</span
+            <span class="button button-primary disabled" tabindex="-1"
+              >Submit</span
             >
           </button>
         </div>
@@ -36,7 +49,7 @@
         >
       </button>
       <button class="button-wrapper">
-        <span class="button button-hollow" tabindex="-1">Create a Team</span>
+        <span class="button button-hollow" tabindex="-1">Create Team</span>
       </button>
     </div>
   </div>

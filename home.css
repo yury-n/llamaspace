@@ -58,15 +58,24 @@
   margin-bottom: 40px;
 }
 
+.team-owner-name-wrapper {
+  margin-bottom: 0;
+}
+
 .owner-name-wrapper .name {
   margin-bottom: 0;
 }
 
 .owner-name-wrapper img {
   opacity: 0;
-  width: 23px;
-  margin-left: 14px;
+  width: 25px;
+  margin-left: 10px;
   transition: opacity 300ms ease;
+}
+
+.team-owner-name-wrapper img {
+  width: 20px;
+  margin-left: 8px;
 }
 
 .owner-name-wrapper:hover img {
@@ -194,6 +203,24 @@
 .post-thumb:hover .post-thumb-description {
   white-space: normal;
   height: auto;
+}
+
+.post-thumb:hover .post-thumb-remove {
+  opacity: 1;
+}
+
+.post-thumb-remove {
+  width: 22px;
+  position: absolute;
+  top: -28px;
+  right: -28px;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+.post-thumb-remove img {
+  width: 100%;
 }
 
 .post {

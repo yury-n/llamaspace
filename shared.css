@@ -38,6 +38,12 @@ button:active {
   margin-bottom: 10px;
 }
 
+.label span {
+  opacity: 0.2;
+  font-size: 0.9em;
+  margin-left: 8px;
+}
+
 .label-inline {
   font-size: 15px;
   color: #747474;
@@ -128,6 +134,10 @@ button:active {
 .button-wrapper,
 .button:focus {
   outline: none;
+}
+
+.button-wrapper {
+  padding: 0;
 }
 
 .button-wrapper:focus > .button:after {
@@ -222,6 +232,12 @@ button:active {
   }
 }
 
+.button-primary.danger {
+  background: #fc3c83;
+  box-shadow: 0px 3px 6px -1px hsla(320, 97%, 10%, 0.37),
+    inset 0px 3px 8px 1px hsla(0, 0%, 100%, 0.35);
+}
+
 .button-secondary {
   background: var(--secondary-color);
   box-shadow: 0px 3px 6px -1px hsla(0, 0%, 0%, 0.14),
@@ -236,6 +252,11 @@ button:active {
   color: hsl(260, 93%, 35%);
   box-shadow: 0px 3px 6px -1px hsla(0, 0%, 0%, 0.22);
   background: #f9f9f9;
+}
+
+.button-hollow.danger {
+  border: 3px solid #fc3c83;
+  color: #fc3c83;
 }
 
 .button-simple {
@@ -278,6 +299,12 @@ button:active {
   margin: 0;
 }
 
+.team-logo-form-preview {
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+}
+
 .sticky-bar .team-name {
   font-weight: 700;
   font-size: 22px;
@@ -307,9 +334,9 @@ button:active {
 
 .modal-x {
   position: absolute;
-  top: 25px;
-  right: -80px;
-  width: 55px;
+  top: -30px;
+  right: -50px;
+  width: 35px;
   cursor: pointer;
 }
 
