@@ -225,6 +225,8 @@
 
 .post {
   width: 600px;
+  display: flex;
+  flex-direction: column;
 }
 
 .post-image {
@@ -259,6 +261,7 @@
 }
 
 .post-description {
+  flex-shrink: 0;
   font-size: 16px;
   margin-top: 20px;
 }

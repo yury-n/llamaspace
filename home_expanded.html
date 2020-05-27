@@ -1,0 +1,255 @@
+<head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" media="screen, projection" href="./shared.css" />
+  <link rel="stylesheet" media="screen, projection" href="./home.css" />
+</head>
+<div>
+  <div class="sticky-bar">
+    <div class="owner-name-wrapper team-owner-name-wrapper">
+      <div class="team-name">Teamname</div>
+      <img src="./assets/edit.svg" />
+    </div>
+    <div class="sticky-bar-buttons buttons">
+      <button class="button-wrapper">
+        <span class="button button-secondary button-white" tabindex="-1"
+          >Log out</span
+        >
+      </button>
+      <button class="button-wrapper">
+        <span class="button button-hollow" tabindex="-1" style="width: 60px;"
+          >Invite</span
+        >
+      </button>
+    </div>
+  </div>
+  <div class="directory">
+    <div class="input-wrapper input-search-wrapper">
+      <img src="./assets/magnifying_glass.svg" />
+      <input
+        class="input input-search"
+        id="email"
+        type="text"
+        autocomplete="off"
+        spellcheck="false"
+        placeholder="Search"
+      />
+    </div>
+    <div style="display: flex; margin-top: 30px; justify-content: center;">
+      <div class="toggle-control" style="margin-right: 12px;"></div>
+      <div class="label-inline">Show updates only</div>
+    </div>
+    <div class="human">
+      <div class="owner-name-wrapper">
+        <div class="name">
+          Djordje Ungar
+          <div
+            class="human-has-updates"
+            style="background-color: #86fc3c;"
+          ></div>
+        </div>
+        <img src="./assets/edit.svg" />
+      </div>
+      <div class="posts-stream">
+        <div class="post-thumb">
+          <div class="post-thumb-add-button">
+            <img src="./assets/plus.svg" />
+          </div>
+        </div>
+        <div class="post-thumb">
+          <div class="post-thumb-remove"><img src="./assets/x.svg" /></div>
+          <div
+            class="post-thumb-image"
+            style="background-image: url(https://source.unsplash.com/random?2);"
+          ></div>
+          <div class="post-thumb-description">
+            This wonderfull view I had when I visited Croatia with my team of
+            frontend and backend developers this autumn.
+          </div>
+        </div>
+        <div class="post-thumb">
+          <div class="post-thumb-remove"><img src="./assets/x.svg" /></div>
+          <div
+            class="post-thumb-image"
+            style="background-image: url(https://source.unsplash.com/random?3);"
+          ></div>
+        </div>
+        <div class="post-thumb">
+          <div class="post-thumb-remove"><img src="./assets/x.svg" /></div>
+          <div
+            class="post-thumb-image"
+            style="background-image: url(https://source.unsplash.com/random?4);"
+          ></div>
+        </div>
+        <div class="post-thumb">
+          <div class="post-thumb-remove"><img src="./assets/x.svg" /></div>
+          <div
+            class="post-thumb-image"
+            style="background-image: url(https://source.unsplash.com/random?5);"
+          ></div>
+        </div>
+        <div class="post-thumb">
+          <div
+            class="post-thumb-image"
+            style="background-image: url(https://source.unsplash.com/random?6);"
+          ></div>
+        </div>
+        <div class="post-thumb">
+          <div
+            class="post-thumb-image"
+            style="background-image: url(https://source.unsplash.com/random?7);"
+          ></div>
+        </div>
+        <div class="post-thumb">
+          <div
+            class="post-thumb-image"
+            style="background-image: url(https://source.unsplash.com/random?8);"
+          ></div>
+        </div>
+        <div class="post-thumb">
+          <div
+            class="post-thumb-image"
+            style="background-image: url(https://source.unsplash.com/random?9);"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="human">
+      <div class="name">
+        Keith Pope
+        <div class="human-has-updates" style="background-color: #fc9d3c;"></div>
+      </div>
+      <div class="posts-stream">
+        <div class="post-thumb">
+          <div
+            class="post-thumb-image"
+            style="
+              background-image: url(https://source.unsplash.com/random?11);
+            "
+          ></div>
+        </div>
+        <div class="post-thumb">
+          <div
+            class="post-thumb-image"
+            style="
+              background-image: url(https://source.unsplash.com/random?22);
+            "
+          ></div>
+        </div>
+        <div class="post-thumb">
+          <div
+            class="post-thumb-image"
+            style="
+              background-image: url(https://source.unsplash.com/random?33);
+            "
+          ></div>
+        </div>
+        <div class="post-thumb">
+          <div
+            class="post-thumb-image"
+            style="
+              background-image: url(https://source.unsplash.com/random?44);
+            "
+          ></div>
+        </div>
+        <div class="post-thumb">
+          <div
+            class="post-thumb-image"
+            style="
+              background-image: url(https://source.unsplash.com/random?55);
+            "
+          ></div>
+        </div>
+        <div class="post-thumb">
+          <div
+            class="post-thumb-image"
+            style="
+              background-image: url(https://source.unsplash.com/random?66);
+            "
+          ></div>
+          <div class="post-thumb-more-button">+3</div>
+        </div>
+      </div>
+    </div>
+    <div class="human">
+      <div class="name">
+        Micah Goulart
+        <div class="human-has-dot"></div>
+      </div>
+      <div class="posts-stream">
+        <div class="post-thumb">
+          <div
+            class="post-thumb-image"
+            style="
+              background-image: url(https://source.unsplash.com/random?40);
+            "
+          ></div>
+        </div>
+        <div class="post-thumb">
+          <div
+            class="post-thumb-image"
+            style="
+              background-image: url(https://source.unsplash.com/random?42);
+            "
+          ></div>
+        </div>
+        <div class="post-thumb">
+          <div
+            class="post-thumb-image"
+            style="
+              background-image: url(https://source.unsplash.com/random?43);
+            "
+          ></div>
+        </div>
+        <div class="post-thumb">
+          <div
+            class="post-thumb-image"
+            style="
+              background-image: url(https://source.unsplash.com/random?44);
+            "
+          ></div>
+        </div>
+        <div class="post-thumb">
+          <div
+            class="post-thumb-image"
+            style="
+              background-image: url(https://source.unsplash.com/random?45);
+            "
+          ></div>
+        </div>
+        <div class="post-thumb">
+          <div
+            class="post-thumb-image"
+            style="
+              background-image: url(https://source.unsplash.com/random?46);
+            "
+          ></div>
+          <div class="post-thumb-more-button">+22</div>
+        </div>
+      </div>
+    </div>
+    <div class="human">
+      <div class="name">
+        Yury Nedomolkin
+        <div class="human-has-dot"></div>
+      </div>
+      <div class="posts-stream">
+        <div class="post-thumb">
+          <div class="post-thumb-add-button">+</div>
+        </div>
+        <div class="post-thumb post-thumb-empty"></div>
+        <div class="post-thumb post-thumb-empty"></div>
+        <div class="post-thumb post-thumb-empty"></div>
+        <div class="post-thumb post-thumb-empty"></div>
+        <div class="post-thumb post-thumb-empty"></div>
+      </div>
+    </div> -->
+  </div>
+</div>
+<div class="footer">
+  <div>llamaspace</div>
+  <div class="button button-simple">Contact</div>
+</div>
