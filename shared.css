@@ -300,6 +300,13 @@ button:active {
   margin: 0;
 }
 
+.team-logo {
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+  background-size: cover;
+}
+
 .team-logo-form-preview {
   width: 42px;
   height: 42px;
@@ -358,6 +365,10 @@ button:active {
 .form-error {
   color: #fc3c83;
   margin-bottom: 35px;
+}
+
+.form-error + .form-error {
+  margin-top: -30px;
 }
 
 .form-buttons {
