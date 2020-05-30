@@ -8,6 +8,25 @@
   <link rel="stylesheet" media="screen, projection" href="./home.css" />
 </head>
 <div>
+  <div class="modal-overlay">
+    <div class="modal">
+      <img class="modal-x" src="./assets/x.svg" />
+      <div class="alert">
+        <div class="modal-title">Invite</div>
+        <input
+          class="input"
+          type="text"
+          value="http://llamaspace.app/xVxc348o"
+          style="width: 330px;"
+        />
+        <div class="form-buttons buttons">
+          <button class="button-wrapper">
+            <span class="button button-primary" tabindex="-1">Close</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="sticky-bar">
     <div class="owner-name-wrapper team-owner-name-wrapper">
       <div
@@ -100,28 +119,14 @@
             class="post-thumb-image"
             style="background-image: url(https://source.unsplash.com/random?6);"
           ></div>
-        </div>
-        <div class="post-thumb">
-          <div
-            class="post-thumb-image"
-            style="background-image: url(https://source.unsplash.com/random?7);"
-          ></div>
-        </div>
-        <div class="post-thumb">
-          <div
-            class="post-thumb-image"
-            style="background-image: url(https://source.unsplash.com/random?8);"
-          ></div>
-        </div>
-        <div class="post-thumb">
-          <div
-            class="post-thumb-image"
-            style="background-image: url(https://source.unsplash.com/random?9);"
-          ></div>
+          <div class="post-thumb-more-button">
+            <span>+</span>
+            4
+          </div>
         </div>
       </div>
     </div>
-    <!-- <div class="human">
+    <div class="human">
       <div class="name">
         Keith Pope
         <div class="human-has-updates" style="background-color: #fc9d3c;"></div>
@@ -250,7 +255,7 @@
         <div class="post-thumb post-thumb-empty"></div>
         <div class="post-thumb post-thumb-empty"></div>
       </div>
-    </div> -->
+    </div>
   </div>
 </div>
 <div class="footer">
