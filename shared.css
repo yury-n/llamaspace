@@ -69,8 +69,8 @@ button:active {
 .input:hover,
 .textarea:hover {
   transition: all 250ms;
-  box-shadow: 0 0 0px 5px #e7e1ff99;
-  border-color: #d0d0d0;
+  box-shadow: 0 0 0px 6px #e7e1ff99;
+  border-color: #d0d0d0b3;
   background: white;
 }
 
@@ -85,7 +85,7 @@ button:active {
 .textarea:focus {
   border-color: var(--primary-color);
   background: white;
-  box-shadow: 0 0 0px 5px #e7e1ff99;
+  box-shadow: 0 0 0px 6px #e7e1ff99;
 }
 
 .input.error,
